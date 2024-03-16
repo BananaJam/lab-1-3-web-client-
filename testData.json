@@ -1,0 +1,46 @@
+{
+    "title": "Тест на знання Англ. мови",
+    "description": "Тестовий опис",
+    "questions": [
+        {
+            "question": "Як правильно перекласти слово 'кіт'?",
+            "answers": [
+                "cat",
+                "dog",
+                "mouse",
+                "elephant"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Як правильно перекласти слово 'собака'?",
+            "answers": [
+                "cat",
+                "dog",
+                "mouse",
+                "elephant"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Як правильно перекласти слово 'миша'?",
+            "answers": [
+                "cat",
+                "dog",
+                "mouse",
+                "elephant"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Як правильно перекласти слово 'слон'?",
+            "answers": [
+                "cat",
+                "dog",
+                "mouse",
+                "elephant"
+            ],
+            "correct": 3
+        }
+    ]
+}
