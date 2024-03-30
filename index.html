@@ -166,15 +166,30 @@
 			<div class="questionary__result">
 				<div class="questionary__result-title">Результати</div>
 				<div class="questionary__result-row">
-					<div class="questionary__result-label">Факультет</div>
+					<div class="row">
+						<div class="questionary__result-label">Факультет</div>
+						<select type="text" id="result-faculty">
+							<option value="1">ФІ</option>
+							<option value="2">ФМІ</option>
+							<option value="3">ФЕМ</option>
+							<option value="4">ФПМ</option>
+							<option value="5">ФБМ</option>
+						</select>
+					</div>
 					<div class="questionary__result-value" id="faculty_res"></div>
 				</div>
 				<div class="questionary__result-row">
-					<div class="questionary__result-label">Дата</div>
+					<div class="row">
+						<div class="questionary__result-label">Дата</div>
+						<input type="date" id="result-date" />
+					</div>
 					<div class="questionary__result-value" id="date_res"></div>
 				</div>
 				<div class="questionary__result-row">
-					<div class="questionary__result-label">Середній бал</div>
+					<div class="row">
+						<div class="questionary__result-label">Середній бал</div>
+						<input type="number" id="result-avg_point" />
+					</div>
 					<div class="questionary__result-value" id="points_res"></div>
 				</div>
 			</div>

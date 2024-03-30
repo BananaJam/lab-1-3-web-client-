@@ -24,10 +24,21 @@ const faculty = document.getElementById("faculty_res");
 const date = document.getElementById("date_res");
 const points = document.getElementById("points_res");
 
-faculty.innerHTML = JSON.stringify(data.filter((item) => item.faculty == "3"));
-date.innerHTML = JSON.stringify(data.filter((item) => item.date == "2024-03-06"));
-points.innerHTML = JSON.stringify(data.filter((item) => item.avg_point > 500));
+results_faculty = document.getElementById("result-faculty");
+results_date = document.getElementById("result-date");
+results_points = document.getElementById("result-avg_point");
 
+function UpdateResults() {
+    faculty.innerHTML = JSON.stringify(data.filter((item) => item.faculty == results_faculty.value));
+    date.innerHTML = JSON.stringify(data.filter((item) => item.date == results_date.value));
+    points.innerHTML = JSON.stringify(data.filter((item) => item.avg_point > results_points.value));
+}
+
+results_faculty.onchange = UpdateResults;
+
+results_date.onchange = UpdateResults;
+
+results_points.onchange = UpdateResults;
 // Test
 
 const testData = fetch('./testData.json')
